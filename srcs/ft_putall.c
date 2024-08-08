@@ -29,7 +29,7 @@ int	ft_putstr_count(char *str)
 	i = 0;
 	while (str[i])
 	{
-		ft_putchar(str[i]);
+		ft_putchar_fd(str[i], STDOUT_FILENO);
 		i++;
 	}
 	return (i);
